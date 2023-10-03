@@ -21,7 +21,7 @@ const result = document.querySelector('#result');
 if(+userValue === number) {
     result.innerHTML = `O número é ${number}.Você acertou, parabéns!`;
 } else if(+userValue > number) {
-    result.innerHTML = `Errou.Seu palpite foi muito alto!`;
+    result.innerHTML = `Errou. Seu palpite foi muito alto!`;
 } else if(!userValue) {
     alert('Insira um número!');
 } else if(!number) {
