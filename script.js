@@ -21,13 +21,13 @@ const result = document.querySelector('#result');
 if(+userValue === number) {
     result.innerHTML = `O número é ${number}.Você acertou, parabéns!`;
 } else if(+userValue > number) {
-    result.innerHTML = `Errou. O número está acima!`;
+    result.innerHTML = `Errou.Seu palpite foi muito alto!`;
 } else if(!userValue) {
     alert('Insira um número!');
 } else if(!number) {
     alert('Gere o número aleatório primeiro!');
 }
 else {
-    result.innerHTML = `Errou. O número está abaixo!`;
+    result.innerHTML = `Errou. Seu palpite foi muito abaixo!`;
 }
 }
