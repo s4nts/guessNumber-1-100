@@ -5,8 +5,9 @@ var number;
 function generateNumber() {
 
 number = +Math.floor(Math.random() * 100);
-
+const inputYourNumber = document.querySelector('#inputYourNumber');
 console.log(`O resultado deve ser ${number}`);
+inputYourNumber.innerHTML = `Número gerado, agora insira seu palpite:`
 
 return number;
 }
