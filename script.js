@@ -14,12 +14,13 @@ return number;
 
 
 function guessNumber() {
-
 const userValue = document.querySelector('#userValue').value;
 const result = document.querySelector('#result');
+const fireworks = document.querySelector('#fireworks');
 
 if(+userValue === number) {
     result.innerHTML = `O número é ${number}.Você acertou, parabéns!`;
+    fireworks.src = 'img/fireworks.gif' ;
 } else if(+userValue > number) {
     result.innerHTML = `Errou. Seu palpite foi muito alto!`;
 } else if(!userValue) {

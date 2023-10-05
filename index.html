@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Guess a number</title>
 </head>
 <body>
-    <h1>Tente adivinhar um número entre 1 a 100</h1>
 
-</br>
-    <button onclick="generateNumber()">Clique para gerar um número</button>
-</br>
-<p id="inputYourNumber"></p>
 
-    <input id="userValue" type="number" placeholder="Adicione um valor:">
+    <div class="title">
+        <h1>Tente adivinhar um número entre 1 a 100</h1>
+    </div>
+    <div class="content">
+        <button onclick="generateNumber()">Gerar um número</button>
+        <p id="inputYourNumber"></p>
+        <input id="userValue" type="number" placeholder="Adicione seu palpite:">
+        
+        </br>
+        <button onclick="guessNumber()">Enviar</button>
+        
+        <p id="result"></p>
+        <img id="fireworks">
+    </div>
 
-    <button onclick="guessNumber()">Submit</button>
-    
-    <p id="result"></p>
-
+    <footer>
+        <p>Todos os direitos reservados. <a href="https://github.com/s4nts">GITHUB</a></p>
+    </footer>
     
 </body>
 <script src="script.js"></script>
